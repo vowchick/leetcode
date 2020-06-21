@@ -22,10 +22,10 @@ void print_vector (vector<int> a, int n)
 }
 int read_from_file_2 (char *name, vector<vector<char>>& a)
 {
-    a.resize (10);
+    a.resize (9);
     for (int i = 0; i < 9; i++)
       {
-        a[i].resize (10);
+        a[i].resize (9);
       }
     FILE *fp = fopen (name, "r");
     if (!fp)

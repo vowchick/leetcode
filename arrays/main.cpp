@@ -11,11 +11,11 @@ int main (int argc, char *argv[])
   namea = argv[1];
   int res = read_from_file_2 (namea, board);
 //  int res = read_from_file (namea, a);
-//  if (res < 0)
-//    {
-//      printf ("Couldn't read\n");
-//      return -1;
-//    }
+  if (res < 0)
+    {
+      printf ("Couldn't read\n");
+      return -1;
+    }
   double t = clock ();
   auto ans = solve(board);
   t = (clock () - t) / CLOCKS_PER_SEC;
