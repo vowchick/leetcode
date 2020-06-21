@@ -4,7 +4,7 @@ int main (int argc, char *argv[])
   char *namea;
   if (argc != 2)
     {
-      printf ("usage %s a.txt\n", argv[0]);
+      printf ("usage ./a.out a.txt\n");
       return 0;
     }
   vector<vector<char>> board;
